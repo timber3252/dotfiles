@@ -1,0 +1,23 @@
+[{
+  "layer": "top",
+  "position": "top",
+  "include": [
+    "~/.config/waybar/modules.json"
+  ],
+  "modules-left": [
+    "cpu",
+    "memory",
+    "custom/media",
+    "tray"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "hyprland/submap",
+    "pulseaudio",
+    "network",
+    "temperature",
+    "clock"
+  ]
+}]

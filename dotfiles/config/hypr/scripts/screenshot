@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# requirements: grim, slurp, mpv, ffmpeg, wl-clipboard, swappy
+# Freezes the screen, allows capturing an area.
+# first argument: path to first file
+# second argument: path to second file
+# third argument: the title to use for mpv
+
+TMPIMG=${1:-"$(mktemp --suffix ss.ppm)"}
+TMP2IMG=${2:-"$(mktemp --suffix ss.png)"}
+IMGTITLE=${3:-"mpv-screenshot"}
+SLURPARG="-f %w:%h:%x:%y -d -b 00000066"
+
+grim -c -t ppm "$TMPIMG"
+mpv --osc=no --image-display-duration=inf --fs --title="$IMGTITLE" "$TMPIMG" &
+#swayimg -f -s fit -c "$IMGTITLE" "$TMPIMG" &
+slurpres=$(slurp $SLURPARG)
+IFS=: read -r w h x y <<< $slurpres
+w=$((w*2))
+h=$((h*2))
+x=$((x*2))
+y=$((y*2))
+pkill -f "$IMGTITLE"
+ffmpeg -loglevel warning -i "$TMPIMG" -vf "crop=$w:$h:$x:$y" -y -c:v png -f image2pipe -pred 2 -compression_level 1 "$TMP2IMG"
+wl-copy < "$TMP2IMG"
+swappy -f "$TMP2IMG" -o - | wl-copy
+
+rm "$TMPIMG" "$TMP2IMG"
+

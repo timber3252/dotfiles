@@ -1,0 +1,29 @@
+numbered_command = false
+use_trash = false
+watch_files = true
+xdg_open = false
+xdg_open_fork = false
+
+[display]
+mode = "default"
+automatically_count_files = true
+collapse_preview = true
+column_ratio = [1, 4, 3]
+scroll_offset = 6
+show_borders = false
+show_hidden = false
+show_icons = true
+tilde_in_titlebar = true
+line_number_style = "relative"
+
+[display.sort]
+method = "natural"
+case_sensitive = false
+directories_first = true
+reverse = false
+
+[preview]
+max_preview_size            = 999999999
+preview_script              = "~/.config/joshuto/scripts/preview"
+preview_shown_hook_script   = "~/.config/joshuto/scripts/show_image"
+preview_removed_hook_script = "~/.config/joshuto/scripts/remove_image"

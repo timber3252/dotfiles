@@ -1,0 +1,61 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'HarmonyOS Sans SC', 'JetBrains Mono Nerd Font';
+    font-size: 15px;
+    min-height: 0;
+}
+
+window#waybar {
+    opacity: 0.8;
+    background: #1e1e2e;
+    border-bottom: 3px solid #424761;
+    color: #cdd6f4;
+}
+
+window#waybar.hidden {
+    opacity: 0.0;
+}
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button {
+    padding: 5px;
+    background: transparent;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    background: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+    padding: 0 10px;
+    margin: 0;
+
+    background: transparent;
+}
+
+#cpu, #memory, #temperature, #network, #pulseaudio, #custom-media, #mode, #tray, #idle_inhibitor {
+    border-right: 3px solid #424761;
+}
+
+#pulseaudio {
+    border-left: 3px solid #424761;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}

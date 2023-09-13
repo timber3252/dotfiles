@@ -1,0 +1,53 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_xresources:
+    src: Xresources
+    dst: ~/.Xresources
+  d_xsettingsd:
+    src: config/xsettingsd
+    dst: ~/.config/xsettingsd
+  d_fuzzel:
+    src: config/fuzzel
+    dst: ~/.config/fuzzel
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
+  d_bat:
+    src: config/bat
+    dst: ~/.config/bat
+  d_dunst:
+    src: config/dunst
+    dst: ~/.config/dunst
+  d_waybar:
+    src: config/waybar
+    dst: ~/.config/waybar
+  d_fish:
+    src: config/fish
+    dst: ~/.config/fish
+    chmod: '700'
+  d_joshuto:
+    src: config/joshuto
+    dst: ~/.config/joshuto
+  d_fontconfig:
+    src: config/fontconfig
+    dst: ~/.config/fontconfig
+  d_hypr:
+    src: config/hypr
+    dst: ~/.config/hypr
+profiles:
+  timber-desktop:
+    dotfiles:
+    - f_xresources
+    - d_xsettingsd
+    - d_fuzzel
+    - d_kitty
+    - d_bat
+    - d_dunst
+    - d_waybar
+    - d_fish
+    - d_joshuto
+    - d_fontconfig
+    - d_hypr

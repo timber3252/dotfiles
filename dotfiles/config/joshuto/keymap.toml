@@ -1,0 +1,129 @@
+[default_view]
+keymap = [
+  { keys = [ "escape" ], command = "escape" },
+  { keys = [ ";" ], command = ":" },
+  { keys = [ ":" ], command = ":" },
+  { keys = [ "'" ], command = ":shell fish" },
+  { keys = [ "," ], command = "set_mode" },
+  { keys = [ "w" ], command = "show_tasks --exit-key=w" },
+
+  # Tabs
+  { keys = [ "ctrl+t" ], command = "new_tab --current" },
+  { keys = [ "T" ], command = "new_tab --cursor" },
+  { keys = [ "q" ], command = "close_tab" },
+  { keys = [ "Q" ], command = "quit --output-current-directory" },
+  { keys = [ "\t" ], command = "tab_switch 1" },
+  { keys = [ "backtab" ], command = "tab_switch -1" },
+  { keys = [ "1" ], command = "tab_switch_index 1" },
+  { keys = [ "2" ], command = "tab_switch_index 2" },
+  { keys = [ "3" ], command = "tab_switch_index 3" },
+  { keys = [ "4" ], command = "tab_switch_index 4" },
+  { keys = [ "5" ], command = "tab_switch_index 5" },
+
+  # Move around
+  { keys = [ "h" ], command = "cd .." },
+  { keys = [ "j" ], command = "cursor_move_down" },
+  { keys = [ "k" ], command = "cursor_move_up" },
+  { keys = [ "J" ], command = "cursor_move_down 5" },
+  { keys = [ "K" ], command = "cursor_move_up 5" },
+  { keys = [ "ctrl+j" ], command = "parent_cursor_move_down" },
+  { keys = [ "ctrl+k" ], command = "parent_cursor_move_up" },
+  { keys = [ "g", "g" ], command = "cursor_move_home" },
+  { keys = [ "G" ], command = "cursor_move_end" },
+  { keys = [ "c", "d" ], command = ":cd " },
+
+  # Open
+  { keys = [ "l" ], command = "open" },
+  { keys = [ "r" ], command = "open_with" },
+
+  # Copy / Paste
+  { keys = [ "d", "d" ], command = "cut_files" },
+  { keys = [ "y", "y" ], command = "copy_files" },
+  { keys = [ "y", "n" ], command = "copy_filename" },
+  { keys = [ "y", "." ], command = "copy_filename_without_extension" },
+  { keys = [ "y", "p" ], command = "copy_filepath" },
+  { keys = [ "y", "d" ], command = "copy_dirpath" },
+  { keys = [ "p", "p" ], command = "paste_files" },
+  { keys = [ "p", "o" ], command = "paste_files --overwrite=true" },
+  { keys = [ "p", "l" ], command = "symlink_files --relative=false" },
+  { keys = [ "p", "L" ], command = "symlink_files --relative=true" },
+
+  # Rename
+  { keys = [ "a" ], command = "rename_append" },
+  { keys = [ "A" ], command = "rename_prepend" },
+  { keys = [ "c", "w" ], command = ":rename " },
+  { keys = [ "b", "b" ], command = "bulk_rename" },
+
+  # Create / Delete
+  { keys = [ "f", "t" ], command = ":touch " },
+  { keys = [ "m", "k" ], command = ":mkdir " },
+  { keys = [ "d", "D" ], command = "delete_files" },
+
+  # Selection
+  { keys = [ " " ], command = "select --toggle=true" },
+  { keys = [ "t" ], command = "select --all=true --toggle=true" },
+  { keys = [ "v" ], command = "toggle_visual" },
+
+  # Search
+  { keys = [ "n" ], command = "search_next" },
+  { keys = [ "N" ], command = "search_prev" },
+  { keys = [ "/" ], command = ":search " },
+  { keys = [ "|" ], command = ":search_inc " },
+  { keys = [ "\\" ], command = ":search_glob " },
+  { keys = [ "S" ], command = "search_fzf" },
+  { keys = [ "C" ], command = "subdir_fzf" },
+
+  # Sort
+  { keys = [ "s", "r" ], command = "sort reverse" },
+  { keys = [ "s", "l" ], command = "sort lexical" },
+  { keys = [ "s", "m" ], command = "sort mtime" },
+  { keys = [ "s", "n" ], command = "sort natural" },
+  { keys = [ "s", "s" ], command = "sort size" },
+  { keys = [ "s", "e" ], command = "sort ext" },
+
+  # Goto
+  { keys = [ "g", "/" ], command = "cd /" },
+  { keys = [ "g", "c", "c" ], command = "cd ~/.config" },
+  { keys = [ "g", "c", "f" ], command = "cd ~/.config/fish" },
+  { keys = [ "g", "c", "h" ], command = "cd ~/.config/hypr" },
+  { keys = [ "g", "c", "j" ], command = "cd ~/.config/joshuto" },
+  { keys = [ "g", "c", "n" ], command = "cd ~/.config/nvim" },
+  { keys = [ "g", "c", "w" ], command = "cd ~/.config/waybar" },
+  { keys = [ "g", "d" ], command = "cd ~/Downloads" },
+  { keys = [ "g", "e" ], command = "cd /etc" },
+  { keys = [ "g", "h" ], command = "cd ~/" },
+  { keys = [ "g", "r" ], command = "cd ~/Repositories/" },
+
+  # Line mode
+  { keys = [ "m", "s" ], command = "linemode size" },
+  { keys = [ "m", "m" ], command = "linemode mtime" },
+  { keys = [ "m", "M" ], command = "linemode sizemtime" },
+
+  # Extension
+  { keys = [ "z", "h" ], command = "toggle_hidden" },
+  { keys = [ "z", "r" ], command = "reload_dirlist" },
+]
+
+[task_view]
+keymap = [
+  { keys = [ "j" ], command = "cursor_move_down" },
+  { keys = [ "k" ], command = "cursor_move_up" },
+  { keys = [ "J" ], command = "cursor_move_down 5" },
+  { keys = [ "K" ], command = "cursor_move_up 5" },
+  { keys = [ "g", "g" ], command = "cursor_move_home" },
+  { keys = [ "G" ], command = "cursor_move_end" },
+
+  { keys = [ "w" ], command = "show_tasks" },
+  { keys = [ "escape" ], command = "show_tasks" },
+]
+
+[help_view]
+keymap = [
+  { keys = [ "j" ], command = "cursor_move_down" },
+  { keys = [ "k" ], command = "cursor_move_up" },
+  { keys = [ "J" ], command = "cursor_move_down 5" },
+  { keys = [ "K" ], command = "cursor_move_up 5" },
+  { keys = [ "g", "g" ], command = "cursor_move_home" },
+  { keys = [ "G" ], command = "cursor_move_end" },
+]
+

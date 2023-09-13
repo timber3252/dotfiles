@@ -1,0 +1,84 @@
+{
+  "hyprland/workspaces": {
+    "sort-by-name": true,
+    "format": "{name}",
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1"
+  },
+  "hyprland/submap": {
+    "format": "{}  "
+  },
+  "hyprland/window": {
+    "format": "{}"
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "format": "{icon}  {volume}%",
+    "format-muted": "󰝟  {volume}%",
+    "format-icons": {
+      "headphone": "󰋋",
+      "default": ["󰖀", "󰕾"]
+    },
+    "on-click": "pulsemixer --toggle-mute"
+  },
+  "network": {
+    "interval": 1,
+    "format": "󰕒  {bandwidthUpBytes}  󰇚  {bandwidthDownBytes}",
+    "format-alt": "{icon}  {ipaddr}",
+    "format-disconnected": "",
+    "format-icons": {
+      "wifi": [
+        "󰖩"
+      ],
+      "ethernet": [
+        "󰈀"
+      ]
+    },
+    "on-click": "",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+  "cpu": {
+    "interval": 1,
+    "format": "  {usage}% / {max_frequency}GHz",
+    // "format": "  {usage}%",
+    "max-length": 30
+  },
+  "memory": {
+    "interval": 1,
+    "format": "  {percentage}% / {used}GiB",
+    // "format": "  {percentage}%",
+    "max-length": 30
+  },
+  "temperature": {
+    "thermal-zone": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    "format-critical": "{icon}  {temperatureC}°C",
+    "format": "{icon}  {temperatureC}°C",
+    "format-icons": [
+      ""
+    ]
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{:󱑍  %a %b %d, %I:%M %p}"
+    // "format": "{:󱑍  %I:%M %p}",
+    // "format-alt": "{:󱑍  %a %b %d, %I:%M %p}"
+  },
+  "custom/media": {
+    "format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 40,
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
+  }
+}
