@@ -31,10 +31,9 @@ def on_metadata(player, metadata, manager):
     logger.info('Received new metadata')
     track_info = ''
 
-    if player.props.player_name == 'spotify' and \
-            'mpris:trackid' in metadata.keys() and \
-            ':ad:' in player.props.metadata['mpris:trackid']:
-        track_info = 'AD PLAYING'
+    if player.props.player_name == 'firefox':
+        write_output('', player)
+
     elif player.get_artist() != '' and player.get_title() != '':
         track_info = '{artist} - {title}'.format(artist=player.get_artist(),
                                                  title=player.get_title())

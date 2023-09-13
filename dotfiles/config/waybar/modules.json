@@ -75,7 +75,7 @@
     "format": "{}",
     "escape": true,
     "return-type": "json",
-    "max-length": 40,
+    "max-length": 35,
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
