@@ -15,6 +15,7 @@
   "pulseaudio": {
     "scroll-step": 5,
     "format": "{icon}  {volume}%",
+    "format-bluetooth": "󰂯  {volume}%",
     "format-muted": "󰝟  {volume}%",
     "format-icons": {
       "headphone": "󰋋",
@@ -43,13 +44,11 @@
   "cpu": {
     "interval": 1,
     "format": "  {usage}% / {max_frequency}GHz",
-    // "format": "  {usage}%",
     "max-length": 30
   },
   "memory": {
     "interval": 1,
     "format": "  {percentage}% / {used}GiB",
-    // "format": "  {percentage}%",
     "max-length": 30
   },
   "temperature": {
@@ -68,8 +67,6 @@
   },
   "clock": {
     "format": "{:󱑍  %a %b %d, %I:%M %p}"
-    // "format": "{:󱑍  %I:%M %p}",
-    // "format-alt": "{:󱑍  %a %b %d, %I:%M %p}"
   },
   "custom/media": {
     "format": "{}",
@@ -77,8 +74,8 @@
     "return-type": "json",
     "max-length": 35,
     "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous",
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next",
     "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
   }
 }
