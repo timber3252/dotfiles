@@ -51,3 +51,16 @@ profiles:
     - d_joshuto
     - d_fontconfig
     - d_hypr
+  timber-laptop:
+    dotfiles:
+    - f_xresources
+    - d_xsettingsd
+    - d_fuzzel
+    - d_kitty
+    - d_bat
+    - d_dunst
+    - d_waybar
+    - d_fish
+    - d_joshuto
+    - d_fontconfig
+    - d_hypr
