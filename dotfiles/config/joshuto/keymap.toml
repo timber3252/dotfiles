@@ -98,7 +98,7 @@ keymap = [
   # Line mode
   { keys = [ "m", "s" ], command = "linemode size" },
   { keys = [ "m", "m" ], command = "linemode mtime" },
-  { keys = [ "m", "M" ], command = "linemode sizemtime" },
+  { keys = [ "m", "M" ], command = "linemode size | mtime" },
 
   # Extension
   { keys = [ "z", "h" ], command = "toggle_hidden" },
