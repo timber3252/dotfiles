@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# open folder with joshuto
+# support path and url with prefix file:///
+
+# https://stackoverflow.com/questions/6250698/how-to-decode-url-encoded-string-in-shell
+function urldecode() {
+  : "${*//+/ }"; echo -e "${_//%/\\x}";
+}
+
+DIR_PATH=$(urldecode $(echo "$@" | sed "s/file:\/\///g"))
+joshuto "$DIR_PATH"

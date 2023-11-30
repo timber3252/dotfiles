@@ -37,6 +37,18 @@ dotfiles:
   d_hypr:
     src: config/hypr
     dst: ~/.config/hypr
+  f_electron-flags.conf:
+    src: config/electron-flags.conf
+    dst: ~/.config/electron-flags.conf
+  d_scripts:
+    src: scripts
+    dst: ~/.scripts
+  d_applications:
+    src: local/share/applications
+    dst: ~/.local/share/applications
+  f_mimeapps.list:
+    src: config/mimeapps.list
+    dst: ~/.config/mimeapps.list
 profiles:
   timber-desktop:
     dotfiles:
@@ -64,3 +76,7 @@ profiles:
     - d_joshuto
     - d_fontconfig
     - d_hypr
+    - f_electron-flags.conf
+    - d_scripts
+    - d_applications
+    - f_mimeapps.list
