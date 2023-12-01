@@ -86,7 +86,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
     frame_color = "#89B4FA"
@@ -282,19 +282,19 @@
     mouse_right_click = close_current
 
 [urgency_low]
-  background = "#1E1E2E"
-  foreground = "#CDD6F4"
+  background = "#303446DD"
+  foreground = "#C6D0F5"
   timeout = 10
 
 [urgency_normal]
-  background = "#1E1E2E"
-  foreground = "#CDD6F4"
+  background = "#303446DD"
+  foreground = "#C6D0F5"
   timeout = 10
 
 [urgency_critical]
-  background = "#1E1E2E"
-  foreground = "#CDD6F4"
-  frame_color = "#FAB387"
+  background = "#303446DD"
+  foreground = "#C6D0F5"
+  frame_color = "#F9E2AF"
   timeout = 10
 
 # Every section that isn't one of the above is interpreted as a rules to

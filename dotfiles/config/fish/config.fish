@@ -12,7 +12,7 @@ if status is-interactive
   export EDITOR="nvim"
 
   # Environment variables
-  set -x -g BAT_THEME "Catppuccin-mocha"
+  set -x -g BAT_THEME "Catppuccin-frappe"
 
   # Directory abbr
   abbr -a -g gc 'cd ~/.config/'
