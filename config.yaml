@@ -3,9 +3,6 @@ config:
   create: true
   dotpath: dotfiles
 dotfiles:
-  f_xresources:
-    src: Xresources
-    dst: ~/.Xresources
   d_xsettingsd:
     src: config/xsettingsd
     dst: ~/.config/xsettingsd
@@ -49,10 +46,12 @@ dotfiles:
   f_mimeapps.list:
     src: config/mimeapps.list
     dst: ~/.config/mimeapps.list
+  d_x11:
+    src: config/X11
+    dst: ~/.config/X11
 profiles:
   timber-desktop:
     dotfiles:
-    - f_xresources
     - d_xsettingsd
     - d_fuzzel
     - d_kitty
@@ -65,7 +64,6 @@ profiles:
     - d_hypr
   timber-laptop:
     dotfiles:
-    - f_xresources
     - d_xsettingsd
     - d_fuzzel
     - d_kitty
@@ -80,3 +78,4 @@ profiles:
     - d_scripts
     - d_applications
     - f_mimeapps.list
+    - d_x11

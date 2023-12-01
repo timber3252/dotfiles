@@ -45,7 +45,7 @@ window#waybar.hidden {
     background: transparent;
 }
 
-#cpu, #memory, #temperature, #network, #pulseaudio, #custom-media, #mode, #tray, #idle_inhibitor {
+#clock, #cpu, #memory, #temperature, #network, #pulseaudio, #custom-media, #mode, #tray, #idle_inhibitor {
     border-right: 3px solid #424761;
 }
 
