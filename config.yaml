@@ -58,6 +58,9 @@ dotfiles:
   d_qt6ct:
     src: config/qt6ct
     dst: ~/.config/qt6ct
+  d_zathura:
+    src: config/zathura
+    dst: ~/.config/zathura
 profiles:
   timber-desktop:
     dotfiles:
@@ -91,3 +94,4 @@ profiles:
     - d_kvantum
     - d_qt5ct
     - d_qt6ct
+    - d_zathura
