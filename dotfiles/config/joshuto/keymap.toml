@@ -43,6 +43,7 @@ keymap = [
   { keys = [ "y", "." ], command = "copy_filename_without_extension" },
   { keys = [ "y", "p" ], command = "copy_filepath" },
   { keys = [ "y", "d" ], command = "copy_dirpath" },
+  { keys = [ "y", "g" ], command = "shell drag %p" },
   { keys = [ "p", "p" ], command = "paste_files" },
   { keys = [ "p", "o" ], command = "paste_files --overwrite=true" },
   { keys = [ "p", "l" ], command = "symlink_files --relative=false" },

@@ -13,6 +13,7 @@ if status is-interactive
 
   # Environment variables
   set -x -g BAT_THEME "Catppuccin-frappe"
+  fish_add_path ~/.scripts
 
   # Directory abbr
   abbr -a -g gc 'cd ~/.config/'

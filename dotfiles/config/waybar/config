@@ -1,6 +1,31 @@
 [{
   "layer": "top",
   "position": "top",
+  "output": ["eDP-1", "eDP-2"],
+  "include": [
+    "~/.config/waybar/modules.json"
+  ],
+  "modules-left": [
+    "cpu",
+    "memory",
+    "tray"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "hyprland/submap",
+    "pulseaudio",
+    "network",
+    "temperature",
+    "clock",
+    "battery"
+  ]
+},
+{
+  "layer": "top",
+  "position": "top",
+  "output": ["HDMI-A-1"],
   "include": [
     "~/.config/waybar/modules.json"
   ],

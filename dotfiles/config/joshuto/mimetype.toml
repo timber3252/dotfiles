@@ -19,6 +19,7 @@ video_default = [
 text_default = [
   { command = "nvim", args = [ "--" ] },
   { command = "code", args = [ "--" ], fork = true, silent = true },
+  { command = "apostrophe", args = [ "--" ], fork = true, silent = true },
 ]
 
 reader_default = [

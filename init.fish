@@ -27,7 +27,7 @@ paru -S bat fd fzf jq neovim neofetch
 bat cache --build
 
 echo "% Installing themes & icons"
-paru -S qt5ct qt6ct kvantum kvantum-theme-catppuccin-git catppuccin-gtk-theme-frappe catppuccin-gtk-theme-latte catppuccin-gtk-theme-macchiato catppuccin-gtk-theme-mocha capitaine-cursors catppuccin-fcitx5-git papirus-folders-catppuccin-git papirus-icon-theme
+paru -S qt5ct qt6ct kvantum catppuccin-gtk-theme-frappe catppuccin-gtk-theme-latte catppuccin-gtk-theme-macchiato catppuccin-gtk-theme-mocha capitaine-cursors catppuccin-fcitx5-git papirus-folders-catppuccin-git papirus-icon-theme
 papirus-folders -C cat-latte-blue --theme Papirus
 papirus-folders -C cat-macchiato-blue --theme Papirus-Dark
 gsettings set org.gnome.desktop.interface cursor-size 36

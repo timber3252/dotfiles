@@ -84,13 +84,14 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:󱑍  %a %b %d, %I:%M %p}"
+    "format": "{:󱑍  %I:%M %p}",
+    "format-alt": "{:󱑍  %a %b %d, %I:%M %p}"
   },
   "custom/media": {
     "format": "{}",
     "escape": true,
     "return-type": "json",
-    "max-length": 35,
+    "max-length": 40,
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl previous",
     "on-scroll-down": "playerctl next",

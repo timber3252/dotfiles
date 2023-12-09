@@ -61,6 +61,12 @@ dotfiles:
   d_zathura:
     src: config/zathura
     dst: ~/.config/zathura
+  d_light-mode.d:
+    src: local/share/light-mode.d
+    dst: ~/.local/share/light-mode.d
+  d_dark-mode.d:
+    src: local/share/dark-mode.d
+    dst: ~/.local/share/dark-mode.d
 profiles:
   timber-desktop:
     dotfiles:
@@ -95,3 +101,5 @@ profiles:
     - d_qt5ct
     - d_qt6ct
     - d_zathura
+    - d_light-mode.d
+    - d_dark-mode.d

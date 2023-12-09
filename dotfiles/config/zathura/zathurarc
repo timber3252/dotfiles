@@ -1,2 +1,2 @@
-include catppuccin-frappe
+include themes/catppuccin-latte
 set font "HarmonyOS Sans SC 13"
