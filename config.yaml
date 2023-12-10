@@ -46,6 +46,7 @@ dotfiles:
   f_mimeapps.list:
     src: config/mimeapps.list
     dst: ~/.config/mimeapps.list
+    chmod: '600'
   d_x11:
     src: config/x11
     dst: ~/.config/x11
@@ -67,6 +68,12 @@ dotfiles:
   d_dark-mode.d:
     src: local/share/dark-mode.d
     dst: ~/.local/share/dark-mode.d
+  d_darkman:
+    src: config/darkman
+    dst: ~/.config/darkman
+  d_ags:
+    src: config/ags
+    dst: ~/.config/ags
 profiles:
   timber-desktop:
     dotfiles:
@@ -74,12 +81,23 @@ profiles:
     - d_fuzzel
     - d_kitty
     - d_bat
-    - d_dunst
-    - d_waybar
     - d_fish
     - d_joshuto
     - d_fontconfig
     - d_hypr
+    - f_electron-flags.conf
+    - d_scripts
+    - d_applications
+    - f_mimeapps.list
+    - d_x11
+    - d_kvantum
+    - d_qt5ct
+    - d_qt6ct
+    - d_zathura
+    - d_light-mode.d
+    - d_dark-mode.d
+    - d_darkman
+    - d_ags
   timber-laptop:
     dotfiles:
     - d_xsettingsd

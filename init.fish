@@ -14,7 +14,7 @@ echo "% Installing fonts"
 paru -S noto-fonts noto-fonts-cjk ttf-inconsolata-nerd ttf-twemoji ttf-harmonyos-sans ttf-firacode-nerd
 
 echo "% Installing wayland & hyprland stuff"
-paru -S hyprland-hidpi-xprop-git hyprpaper waybar wl-clipboard swaylock libnotify dunst fuzzel xdg-desktop-portal-hyprland playerctl python-gobject
+paru -S hyprland-hidpi-xprop-git swww waybar wl-clipboard swaylock libnotify dunst fuzzel xdg-desktop-portal-hyprland playerctl python-gobject
 
 echo "% Installing xwayland stuff"
 paru -S xorg-xdpyinfo xorg-xrdb xorg-xsetroot xsettingsd

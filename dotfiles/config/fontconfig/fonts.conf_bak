@@ -139,4 +139,82 @@
     </edit>
   </match>
 
+  <!-- ja sans -->
+  <match target="pattern">
+    <test name="lang">
+      <string>ja</string>
+    </test>
+    <test name="family">
+      <string>HarmonyOS Sans SC</string>
+    </test>
+    <edit name="family" binding="strong">
+      <string>Noto Sans CJK JP</string>
+    </edit>
+  </match>
+
+  <!-- ja serif -->
+  <match target="pattern">
+    <test name="lang">
+      <string>ja</string>
+    </test>
+    <test name="family">
+      <string>Noto Serif CJK SC</string>
+    </test>
+    <edit name="family" binding="strong">
+      <string>Noto Serif CJK JP</string>
+    </edit>
+  </match>
+
+  <!-- ja monospace -->
+  <match target="pattern">
+    <test name="lang">
+      <string>ja</string>
+    </test>
+    <test name="family">
+      <string>Noto Sans Mono CJK SC</string>
+    </test>
+    <edit name="family" binding="strong">
+      <string>Noto Sans Mono CJK JP</string>
+    </edit>
+  </match>
+
+  <!-- ko sans -->
+  <match target="pattern">
+    <test name="lang">
+      <string>ko</string>
+    </test>
+    <test name="family">
+      <string>HarmonyOS Sans SC</string>
+    </test>
+    <edit name="family" binding="strong">
+      <string>Noto Sans CJK KR</string>
+    </edit>
+  </match>
+
+  <!-- ko serif -->
+  <match target="pattern">
+    <test name="lang">
+      <string>ko</string>
+    </test>
+    <test name="family">
+      <string>Noto Serif CJK SC</string>
+    </test>
+    <edit name="family" binding="strong">
+      <string>Noto Serif CJK KR</string>
+    </edit>
+  </match>
+
+  <!-- ko monospace -->
+  <match target="pattern">
+    <test name="lang">
+      <string>ko</string>
+    </test>
+    <test name="family">
+      <string>Noto Sans Mono CJK SC</string>
+    </test>
+    <edit name="family" binding="strong">
+      <string>Noto Sans Mono CJK KR</string>
+    </edit>
+  </match>
+
 </fontconfig>

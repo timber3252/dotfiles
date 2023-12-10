@@ -1,0 +1,40 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: 'HarmonyOS Sans SC';
+  font-size: 11pt;
+  color: #C6D0F5;
+}
+
+button {
+  background: #303446;
+  min-height: 15pt;
+}
+
+.bar, .cpu, .clock, .darkman, .hyprland-submap, .memory, .mpris, .network, .pulseaudio, .systray {
+  opacity: 0.95;
+  background: #303446;
+  border-bottom: 2pt solid #424761;
+}
+
+.hyprland-workspaces button {
+  padding: 0pt 5pt;
+  background: transparent;
+  color: #FFFFFF;
+  border-bottom: 2pt solid transparent;
+}
+
+.hyprland-workspaces button.focused {
+  background: #64727D;
+  border-bottom: 2pt solid #FFFFFF;
+}
+
+.hyprland-submap {
+  padding: 0pt 7.5pt;
+}
+
+.spacer {
+  background: #424761;
+  min-width: 2pt;
+}
+

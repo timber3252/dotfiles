@@ -15,10 +15,10 @@ mpv --osc=no --image-display-duration=inf --fs --title="$IMGTITLE" "$TMPIMG" &
 #swayimg -f -s fit -c "$IMGTITLE" "$TMPIMG" &
 slurpres=$(slurp $SLURPARG)
 IFS=: read -r w h x y <<< $slurpres
-w=$((w*2))
-h=$((h*2))
-x=$((x*2))
-y=$((y*2))
+w=$((w*7/4))
+h=$((h*7/4))
+x=$((x*7/4))
+y=$((y*7/4))
 pkill -f "$IMGTITLE"
 ffmpeg -loglevel warning -i "$TMPIMG" -vf "crop=$w:$h:$x:$y" -y -c:v png -f image2pipe -pred 2 -compression_level 1 "$TMP2IMG"
 wl-copy < "$TMP2IMG"
