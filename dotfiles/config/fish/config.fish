@@ -8,7 +8,7 @@ if status is-interactive
   export LC_ALL="en_SG.UTF-8"
 
   # Editor
-  export SHELL="fish"
+  export SHELL="/usr/bin/fish"
   export EDITOR="nvim"
 
   # Environment variables

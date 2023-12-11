@@ -74,6 +74,12 @@ dotfiles:
   d_ags:
     src: config/ags
     dst: ~/.config/ags
+  d_xdg-desktop-portal:
+    src: config/xdg-desktop-portal
+    dst: ~/.config/xdg-desktop-portal
+  f_electron25-flags.conf:
+    src: config/electron25-flags.conf
+    dst: ~/.config/electron25-flags.conf
 profiles:
   timber-desktop:
     dotfiles:
@@ -85,7 +91,6 @@ profiles:
     - d_joshuto
     - d_fontconfig
     - d_hypr
-    - f_electron-flags.conf
     - d_scripts
     - d_applications
     - f_mimeapps.list
@@ -98,6 +103,8 @@ profiles:
     - d_dark-mode.d
     - d_darkman
     - d_ags
+    - d_xdg-desktop-portal
+    - f_electron25-flags.conf
   timber-laptop:
     dotfiles:
     - d_xsettingsd

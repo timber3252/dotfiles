@@ -6,11 +6,12 @@ export const HyprlandWorkspaces = () => Widget.Box({
   className: 'hyprland-workspaces',
   connections: [
     [Hyprland, self => {
-      self.children = Hyprland.workspaces.sort((x, y) => x.id > y.id).map(ws => Widget.Button({
-        onClicked: () => execAsync(`hyprctl dispatch workspace ${ws.id}`),
-        child: Widget.Label(`${ws.id}`),
-        className: Hyprland.active.workspace.id == ws.id ? 'focused' : '',
-      }));
+      self.children = Hyprland.workspaces.filter(x => x.id >= 0)
+	.sort((x, y) => x.id > y.id).map(ws => Widget.Button({
+          onClicked: () => execAsync(`hyprctl dispatch workspace ${ws.id}`),
+          child: Widget.Label(`${ws.id}`),
+          className: Hyprland.active.workspace.id == ws.id ? 'focused' : '',
+        }));
     }],
   ],
 });

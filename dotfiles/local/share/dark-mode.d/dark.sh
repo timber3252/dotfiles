@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # GTK3 / GTK4
-gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 gsettings set org.gnome.desktop.interface gtk-theme "Catppuccin-Frappe-Standard-Blue-Dark"
-gsettings set org.gnome.desktop.interface icon-theme "Papirus"
+gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 
 # Qt5 / Qt6
 sed -i "s/style=kvantum$/style=kvantum-dark/g" $HOME/.config/qt5ct/qt5ct.conf

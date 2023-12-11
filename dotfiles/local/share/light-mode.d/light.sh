@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # GTK3 / GTK4
-gsettings set org.gnome.desktop.interface color-scheme "prefer-light"
 gsettings set org.gnome.desktop.interface gtk-theme "Catppuccin-Latte-Standard-Blue-Light"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus-Light"
 
