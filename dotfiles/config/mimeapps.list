@@ -1,11 +1,19 @@
 [Default Applications]
-# File Manager
 inode/directory=joshuto.desktop
-
-# Documents
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
 
-# Web Browser
 text/html=librewolf.desktop
+
 x-scheme-handler/http=librewolf.desktop
 x-scheme-handler/https=librewolf.desktop
+
+image/bmp=vimiv.desktop
+image/gif=vimiv.desktop
+image/jpeg=vimiv.desktop
+image/jp2=vimiv.desktop
+image/jpeg2000=vimiv.desktop
+image/jpx=vimiv.desktop
+image/png=vimiv.desktop
+image/svg=vimiv.desktop
+image/tiff=vimiv.desktop
+
