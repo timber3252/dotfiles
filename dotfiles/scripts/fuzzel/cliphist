@@ -1,0 +1,4 @@
+#!/bin/fish
+# requirements: cliphist, fuzzel, wl-clipboard
+
+cliphist list | fuzzel -d | cliphist decode | wl-copy

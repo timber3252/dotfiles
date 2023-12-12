@@ -1,0 +1,18 @@
+#!/bin/fish
+# requirements: socat
+
+function handle
+  switch $argv[1]
+    case 'activespecial>>*'
+      set args (string replace 'activespecial>>' '' $argv[1] | string split ',')
+
+      # if no special workspace is open, automatically reset submap
+      if test -z $args[1]
+	hyprctl dispatch submap reset > /dev/null
+      end
+  end
+end
+
+socat -U - UNIX-CONNECT:/tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock | while read line
+  handle $line
+end

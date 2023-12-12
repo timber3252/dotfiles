@@ -1,5 +1,5 @@
-#!/usr/bin/env fish
-# requirements: libpulse (pactl)
+#!/bin/fish
+# requirements: libpulse (pactl), fuzzel
 
 set sinks (pactl list sinks | string trim \
   | string match -rg '^Sink #(.*)|^Description: (.*)')
@@ -9,7 +9,7 @@ set selected_sink_id (math "$selected_index * 2 + 1")
 
 pactl set-default-sink "$sinks[$selected_sink_id]"
 
-# ugly patch to update waybar
-pactl set-sink-volume @DEFAULT_SINK@ +1%
-pactl set-sink-volume @DEFAULT_SINK@ -1%
+# ugly solution to update waybar (ags is used now, no need to do this)
+# pactl set-sink-volume @DEFAULT_SINK@ +1%
+# pactl set-sink-volume @DEFAULT_SINK@ -1%
 

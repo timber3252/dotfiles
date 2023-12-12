@@ -12,7 +12,7 @@ export const Mpris = () => Widget.Button({
       Widget.Label({
 	connections: [[MP, self => {
           const mpris = MP.getPlayer('');
-          const icon = mpris && mpris.playBackStatus == 'Paused' ? '' : '';
+          const icon = mpris && mpris.playBackStatus != 'Playing' ? '' : '';
 	  self.label = icon;
 	}]],
       }),
