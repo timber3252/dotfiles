@@ -18,4 +18,3 @@ kitten themes --reload-in=all Catppuccin-Frappe
 
 # Ags
 cp ~/.config/ags/styles/style.frappe.css ~/.config/ags/style.css -f
-

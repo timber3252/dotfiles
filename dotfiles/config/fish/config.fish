@@ -12,7 +12,7 @@ if status is-interactive
   export EDITOR="nvim"
 
   # Environment variables
-  set -x -g BAT_THEME "Catppuccin-frappe"
+  set -x -g BAT_THEME "base16"
   fish_add_path ~/.scripts
 
   # Directory abbr
