@@ -66,6 +66,8 @@ local plugins = {
       end,
     }
   },
+
+  { import = "custom.configs.user.md-preview" },
 }
 
 return plugins
