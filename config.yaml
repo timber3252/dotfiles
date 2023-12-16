@@ -115,13 +115,10 @@ profiles:
     - d_fuzzel
     - d_kitty
     - d_bat
-    - d_dunst
-    - d_waybar
     - d_fish
     - d_joshuto
     - d_fontconfig
     - d_hypr
-    - f_electron-flags.conf
     - d_scripts
     - d_applications
     - f_mimeapps.list
@@ -132,3 +129,8 @@ profiles:
     - d_zathura
     - d_light-mode.d
     - d_dark-mode.d
+    - d_darkman
+    - d_ags
+    - d_xdg-desktop-portal
+    - f_electron25-flags.conf
+    - d_nvim
