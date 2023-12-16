@@ -10,6 +10,11 @@ import { PulseAudio } from './pulseaudio.js';
 import { Spacer } from './spacer.js';
 import { SysTray } from './systray.js';
 
+{%@@ if profile == "timber-laptop" @@%}
+// machine specific
+import { Battery } from './battery.js';
+{%@@ endif @@%}
+
 const Left = () => Widget.Box({
   children: [
     Cpu(),
@@ -38,6 +43,10 @@ const Right = () => Widget.Box({
     Spacer(),
     Clock(),
     Spacer(),
+{%@@ if profile == "timber-laptop" @@%}
+    Battery(),
+    Spacer(),
+{%@@ endif @@%}
     Darkman(),
   ],
 });

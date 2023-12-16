@@ -11,7 +11,7 @@ button {
   min-height: 15pt;
 }
 
-.bar, .cpu, .clock, .darkman, .hyprland-submap, .memory, .mpris, .network, .pulseaudio, .systray {
+.bar, .battery, .cpu, .clock, .darkman, .hyprland-submap, .memory, .mpris, .network, .pulseaudio, .systray {
   opacity: 0.95;
   background: #303446;
   border-bottom: 2pt solid #424761;
