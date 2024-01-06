@@ -8,7 +8,7 @@ function handle
 
       # if no special workspace is open, automatically reset submap
       if test -z $args[1]
-	hyprctl dispatch submap reset > /dev/null
+        hyprctl dispatch submap reset > /dev/null
       end
   end
 end

@@ -53,7 +53,7 @@ local plugins = {
       require("auto-dark-mode").init()
     end,
     opts = {
-      update_interval = 1000,
+      update_interval = 500,
       set_dark_mode = function()
         vim.g.nvchad_theme = "catppuccin-frappe"
         require("nvchad.utils").replace_word("theme = catppuccin-latte", "theme = catppuccin-frappe")
