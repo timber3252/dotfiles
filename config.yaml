@@ -83,6 +83,9 @@ dotfiles:
   d_nvim:
     src: config/nvim/lua/custom
     dst: ~/.config/nvim/lua/custom
+  f_electron28-flags.conf:
+    src: config/electron28-flags.conf
+    dst: ~/.config/electron28-flags.conf
 profiles:
   timber-desktop:
     dotfiles:
@@ -109,6 +112,7 @@ profiles:
     - d_xdg-desktop-portal
     - f_electron25-flags.conf
     - d_nvim
+    - f_electron28-flags.conf
   timber-laptop:
     dotfiles:
     - d_xsettingsd
