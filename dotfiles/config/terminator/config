@@ -1,0 +1,48 @@
+[global_config]
+  borderless = True
+  title_use_system_font = False
+  title_font = InconsolataGo Nerd Font Mono 11
+[keybindings]
+  cycle_next = None
+  cycle_prev = None
+  go_next = None
+  go_prev = None
+  go_up = None
+  go_down = None
+  go_left = None
+  go_right = None
+  close_term = None
+  close_window = None
+  hide_window = None
+  group_all = None
+  group_all_toggle = None
+  group_tab = None
+  edit_window_title = None
+  edit_tab_title = None
+  edit_terminal_title = None
+  help = None
+[profiles]
+  [[default]]
+    icon_bell = False
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#fcfcfa"
+    font = TerminessTTF Nerd Font Mono 14
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scroll_on_keystroke = False
+    scroll_on_output = True
+    scrollback_infinite = True
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    use_system_font = False
+    bold_is_bright = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

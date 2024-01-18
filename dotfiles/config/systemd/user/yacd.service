@@ -1,0 +1,16 @@
+[Unit]
+Description=Yet Another Clash Dashboard
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=http-server -p 3001 /home/timber3252/.app/yacd/public/
+ExecStop=/bin/kill -s QUIT $MAINPID
+Restart=always
+StandOutput=syslog
+
+StandError=inherit
+
+[Install]
+WantedBy=multi-user.target

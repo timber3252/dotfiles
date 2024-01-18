@@ -1,0 +1,35 @@
+snippet head "Header"
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+typedef pair<int, int> pii;
+const int kInf = 0x3f3f3f3f;
+const ll kInfL = 5e17;
+
+int main() {
+	${1}
+	return 0;
+}
+endsnippet
+snippet fastio "FastIO"
+namespace FastInput {
+static const int kBufSiz = 1 << 20; // 1M
+char buf[kBufSiz], *S = buf, *T = buf, ch;
+bool neg;
+inline bool fetch() { return T = (S = buf) + fread(buf, 1, kBufSiz, stdin), S != T; }
+inline char nc() { return S == T ? (fetch() ? *S++ : EOF) : *S++; }
+template <typename Int> inline void ri(Int &x) {
+	x = neg = 0;
+	for (ch = nc(); isspace(ch); ch = nc())
+		;
+	if (ch == '-')
+		ch = nc(), neg = 1;
+	for (; isdigit(ch); ch = nc())
+		x = x * 10 + ch - '0';
+	if (neg)
+		x = -x;
+}
+} // namespace FastInput
+using FastInput::ri;
+endsnippet

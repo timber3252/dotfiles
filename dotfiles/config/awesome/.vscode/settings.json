@@ -1,0 +1,17 @@
+{
+  "Lua.diagnostics.globals": [
+    "mode",
+    "awesome",
+    "mouse",
+    "root",
+    "playerctl",
+    "battery",
+    "client",
+    "mem"
+  ],
+  "Lua.diagnostics.disable": [
+    "undefined-doc-param",
+    "undefined-doc-name",
+    "lowercase-global"
+  ]
+}

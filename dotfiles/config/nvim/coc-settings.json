@@ -1,0 +1,67 @@
+{
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "suggest.noselect": true,
+  "suggest.enablePreselect": false,
+  "diagnostic.virtualText": true,
+  "codeLens.enable": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "json",
+    "html",
+    "css",
+    "typescript",
+    "javascript",
+    "python",
+    "vue",
+    "markdown"
+  ],
+  "yaml.format.enable": true,
+  "explorer.width": 38,
+  "explorer.quitOnOpen": true,
+  "explorer.sources": [
+    {
+      "name": "bookmark",
+      "expand": false
+    },
+    {
+      "name": "buffer",
+      "expand": false
+    },
+    {
+      "name": "file",
+      "expand": true
+    }
+  ],
+  "explorer.file.column.indent.indentLine": true,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.file.column.git.showIgnored": true,
+  "snippets.ultisnips.directories": [
+    "~/.config/nvim/ultisnips"
+  ],
+  "coc.preferences.snippets.enable": false,
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": [
+        "c",
+        "cpp",
+        "h",
+        "hpp",
+        "cuda",
+        "objc",
+        "objcpp"
+      ],
+      "rootPatterns": [
+        ".ccls",
+        ".ccls-root",
+        "compile_commands.json",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  }
+}

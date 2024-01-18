@@ -1,0 +1,62 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  d_fish:
+    src: config/fish
+    dst: ~/.config/fish
+    chmod: '700'
+  d_ranger:
+    src: config/ranger
+    dst: ~/.config/ranger
+  f_xmodmap:
+    src: Xmodmap
+    dst: ~/.Xmodmap
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+  f_xinitrc:
+    src: xinitrc
+    dst: ~/.xinitrc
+  d_awesome:
+    src: config/awesome
+    dst: ~/.config/awesome
+  d_terminator:
+    src: config/terminator
+    dst: ~/.config/terminator
+  f_gdbinit:
+    src: gdbinit
+    dst: ~/.gdbinit
+  f_xresources:
+    src: Xresources
+    dst: ~/.Xresources
+  d_fcitx5:
+    src: config/fcitx5
+    dst: ~/.config/fcitx5
+    chmod: '700'
+  d_picom:
+    src: config/picom
+    dst: ~/.config/picom
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  d_zathura:
+    src: config/zathura
+    dst: ~/.config/zathura
+profiles:
+  timber-laptop:
+    dotfiles:
+    - d_fish
+    - d_ranger
+    - f_xmodmap
+    - d_nvim
+    - f_xinitrc
+    - d_awesome
+    - d_terminator
+    - f_gdbinit
+    - f_xresources
+    - d_fcitx5
+    - d_picom
+    - d_rofi
+    - d_zathura
