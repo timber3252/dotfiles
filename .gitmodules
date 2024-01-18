@@ -7,3 +7,4 @@
 [submodule "dotfiles/config/awesome/awsl"]
 	path = dotfiles/config/awesome/awsl
 	url = https://github.com/timber3252/awsl.git
+
